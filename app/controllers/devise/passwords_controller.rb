@@ -27,7 +27,7 @@ class Devise::PasswordsController < DeviseController
     self.resource = resource_class.new
     set_minimum_password_length
     resource.reset_password_token = params[:reset_password_token]
-    resource.email = self.resource.email
+    puts(self.resource.email)
   end
 
   # PUT /resource/password
